@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>DropDown Test</title>
+		<link href="HTMLSelect.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			body {
+				font-size: 12px;
+				font-family: verdana;
+			}
+
+			table {
+				font-size: 12px;
+				font-family: verdana;
+				border: 1px solid #888888;
+			}
+
+			table th {
+				height: 30px;
+				text-align: center;
+				border-top: 1px solid #888888;
+				border-bottom: 1px solid #888888;
+			}
+
+			table td {
+				height: 40px;
+				text-align: center;
+			}
+
+			table td.right {
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<table cellspacing="20px" cellpadding="0" border="0" width="100%">
+			<tr>
+				<th width="33%">Description</th>
+				<th>Demo</th>
+			</tr>
+			<tr>
+				<td>Regular Select Box</td>
+				<td>
+					<select name="select1">
+						<option value="value1">Option 1</option>
+						<option value="value2">Option 2</option>
+						<option value="value3">Option 3</option>
+						<option value="value4">Option 4</option>
+						<option value="value5">Option 5</option>
+						<option value="value6">Option 6</option>
+						<option value="value7">Option 7</option>
+						<option value="value8">Option 8</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Plugin Replaced Select Box</td>
+				<td>
+					<select name="select2" class="replace">
+						<option value="value1">Option 1</option>
+						<option value="value2">Option 2</option>
+						<option value="value3">Option 3</option>
+						<option value="value4">Option 4</option>
+						<option value="value5">Option 5</option>
+						<option value="value6">Option 6</option>
+						<option value="value7">Option 7</option>
+						<option value="value8">Option 8</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					With Pre-selected Value <br />
+					(through selected attribute of options)
+				</td>
+				<td>
+					<select name="select3" class="replace">
+						<option value="value1">Option 1</option>
+						<option value="value2">Option 2</option>
+						<option value="value3">Option 3</option>
+						<option value="value4" selected="selected">Option 4</option>
+						<option value="value5">Option 5</option>
+						<option value="value6">Option 6</option>
+						<option value="value7">Option 7</option>
+						<option value="value8">Option 8</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>With Fixed Width (through CSS)</td>
+				<td>
+					<select name="select4" class="replace" style="width: 120px;">
+						<option value="value1">Option 1 with long text</option>
+						<option value="value2">Option 2 with long text</option>
+						<option value="value3">Option 3 with long text</option>
+						<option value="value4">Option 4 with long text</option>
+						<option value="value5">Option 5 with long text</option>
+						<option value="value6">Option 6 with long text</option>
+						<option value="value7">Option 7 with long text</option>
+						<option value="value8">Option 8 with long text</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					With 5 Visible options (though Plugin Options)<br/>
+					Also possible to limit fix height in "pixels" through CSS.
+				</td>
+				<td>
+					<select name="select5" class="replaceWithFiveOptions">
+						<option value="value1">Option 1 with long text</option>
+						<option value="value2">Option 2 with long text</option>
+						<option value="value3">Option 3 with long text</option>
+						<option value="value4">Option 4 with long text</option>
+						<option value="value5">Option 5 with long text</option>
+						<option value="value6">Option 6 with long text</option>
+						<option value="value7">Option 7 with long text</option>
+						<option value="value8">Option 8 with long text</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					With 5 Visible options and 7th Option Selected. <br/>
+					Notice its scrolled to 7th element when opened.
+				</td>
+				<td>
+					<select name="select6" class="replaceWithFiveOptions">
+						<option value="value1">Option 1 with long text</option>
+						<option value="value2">Option 2 with long text</option>
+						<option value="value3">Option 3 with long text</option>
+						<option value="value4">Option 4 with long text</option>
+						<option value="value5">Option 5 with long text</option>
+						<option value="value6">Option 6 with long text</option>
+						<option value="value7" selected="selected">Option 7 with long text</option>
+						<option value="value8">Option 8 with long text</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					This dropdown will open upwards because it won't fit below.
+				</td>
+				<td>
+					<select name="select6" class="replace">
+						<option value="value1">Option 1 with long text</option>
+						<option value="value2">Option 2 with long text</option>
+						<option value="value3">Option 3 with long text</option>
+						<option value="value4">Option 4 with long text</option>
+						<option value="value5">Option 5 with long text</option>
+						<option value="value6">Option 6 with long text</option>
+						<option value="value7" selected="selected">Option 7 with long text</option>
+						<option value="value8">Option 8 with long text</option>
+						<option value="value9">Option 9 with very very long text</option>
+						<option value="value10">Option 10 with very very long text</option>
+						<option value="value11">Option 11 with very very long text</option>
+						<option value="value12">Option 12 with very very long text</option>
+						<option value="value13">Option 13 with very very long text</option>
+						<option value="value14">Option 14 with very very long text</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					This dropdown will open towards left because it won't fit on right side.
+				</td>
+				<td class="right">
+					<select name="select6" class="replaceWithFiveOptions" style="width: 110px;">
+						<option value="value1">Option 1 with very very long text</option>
+						<option value="value2">Option 2 with very very long text</option>
+						<option value="value3">Option 3 with very very long text</option>
+						<option value="value4">Option 4 with very very long text</option>
+						<option value="value5">Option 5 with very very long text</option>
+						<option value="value6">Option 6 with very very long text</option>
+						<option value="value7" selected="selected">Option 7 with very very long text</option>
+						<option value="value8">Option 8 with very very long text</option>
+						<option value="value9">Option 9 with very very long text</option>
+						<option value="value10">Option 10 with very very long text</option>
+						<option value="value11">Option 11 with very very long text</option>
+						<option value="value12">Option 12 with very very long text</option>
+						<option value="value13">Option 13 with very very long text</option>
+						<option value="value14">Option 14 with very very long text</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					Try out UP, DOWN, LEFT, RIGHT, PAGEUP, PAGEDOWN, HOME, END, TAB, ENTER, ESC keys when on focus.
+				</th>
+			</tr>
+		</table>
+		<br /><br />
+		This space is intentionally left blank for scroll testing.
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</body>
+	<script src="jquery.js" language="javascript" type="text/javascript"></script>
+	<script src="HTMLSelect.jquery.js" language="javascript" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function() {
+			$(".replace").HTMLSelect();
+			$(".replaceWithFiveOptions").HTMLSelect({visibleOptions:5});
+		});
+	</script>
+</html>
