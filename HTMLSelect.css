@@ -1,4 +1,4 @@
-.replaceSelect {
+.HTMLSelect {
 	border: 1px solid #BDBCBD;
 	color: #000000;
 	padding: 3px 22px 3px 4px;
@@ -8,15 +8,15 @@
 	background: url("dropdown.png") no-repeat right 1px transparent;
 }
 
-.replaceSelect:focus {
+.HTMLSelect:focus {
 	background: url("dropdown.png") no-repeat right -19px #F7FBFC;
 }
 
-.replaceSelectFocus {
+.HTMLSelectFocus {
 	background: url("dropdown.png") no-repeat right -19px #F7FBFC;
 }
 
-.replaceSelectOptionsWrapper {
+.HTMLSelectOptionsWrapper {
 	border: 1px solid #BDBCBD;
 	background: #FFFFFF;
 	position: absolute;
@@ -26,7 +26,7 @@
 	z-index: 10000001;
 }
 
-.replaceSelectOptionsWrapper .replaceSelectOption {
+.HTMLSelectOptionsWrapper .HTMLSelectOption {
 	display: block;
 	border-bottom: 1px solid #EEEEEE;
 	color: #444444;
@@ -39,17 +39,17 @@
 	text-align: left;
 }
 
-.replaceSelectOptionsWrapper .replaceSelectOptionSelected {
+.HTMLSelectOptionsWrapper .HTMLSelectOptionSelected {
 	background: #4DACFA;
 	color: #FFFFFF;
 }
 
-.replaceSelectOptionsWrapper .replaceSelectOption:hover {
+.HTMLSelectOptionsWrapper .HTMLSelectOption:hover {
 	background: #4DACFA;
 	color: #FFFFFF;
 }
 
-.replaceSelectOptionsWrapper .replaceSelectOptionHover {
+.HTMLSelectOptionsWrapper .HTMLSelectOptionHover {
 	background: #4DACFA;
 	color: #FFFFFF;
 }

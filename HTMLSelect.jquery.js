@@ -3,7 +3,7 @@
 		var defaults = {
 			options : {
 				visibleOptions : -1,
-				charWidth : -1
+				charWidth : -1,
 				useHiddenInput : false,
 				useJSHover : false,
 				useJSFocus : false,
